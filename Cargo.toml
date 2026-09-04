@@ -1,0 +1,15 @@
+[package]
+name = "fisource"
+version = "0.1.0"
+edition = "2024"
+description = "脱敏的、agent 友好的凭据管理系统"
+repository = "https://github.com/quoilam/fisource"
+
+[dependencies]
+clap = { version = "4", features = ["derive"] }
+colored = "2"
+
+# The profile that 'dist' will build with
+[profile.dist]
+inherits = "release"
+lto = "thin"
