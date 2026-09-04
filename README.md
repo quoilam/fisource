@@ -5,8 +5,10 @@
 ## 安装
 
 ```bash
-cargo install fisource
+cargo install --git https://github.com/quoilam/fisource
 ```
+
+或者直接下载预编译二进制（见文末 [下载](#下载)）。
 
 然后把 fish 函数加到 `~/.config/fish/functions/fisource.fish`：
 
